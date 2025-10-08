@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explorá la isla de Socotra con Kairos Expediciones: árboles sangre de dragón, paisajes lunares y playas vírgenes en un ecosistema único." />
+  <meta name="keywords" content="Socotra, expediciones, Kairos, Yemen, isla, sangre de dragón, árboles exóticos, turismo de aventura, naturaleza, playas vírgenes" />
+  <meta name="author" content="Kairos Expediciones" />
+  <meta name="robots" content="index, follow" />
+  <title>Expedición a Socotra | KAIROS Expediciones</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/stilos.css" />
+  <link rel="icon" href="img/k.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark kairos-navbar">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <span class="kairos-gold">KAIROS</span> <span class="text-light">Expediciones</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-warning" href="expediciones.html">Expediciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="galeria.html">Galería</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="nosotros.html">Sobre nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="tribu.html">Tribu Kairos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="form.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero position-relative text-center" aria-label="Vista aérea de la isla de Socotra">
+    <img src="img/socotra.webp" alt="Vista aérea de Socotra con el mar azul de fondo" class="hero-img" />
+    <div class="hero-text text-white">
+      <h1 class="display-4">Isla de Socotra</h1>
+    </div>
+  </section>
+
+  <!-- Introducción -->
+  <section class="content-section text-center">
+    <h2 class="section-title">Bienvenidos a Socotra</h2>
+    <p class="description mx-auto">
+      Sumate a una expedición única a Socotra, la joya escondida del océano Índico. Descubrí un ecosistema tan extraño como fascinante: árboles sangre de dragón, paisajes lunares, cuevas milenarias y playas solitarias. Un destino reservado para verdaderos exploradores, donde la conexión con la naturaleza es total. Acompañados por guías expertos y con todos los permisos necesarios, te llevamos a conocer uno de los lugares más inexplorados del planeta. Una travesía fuera del tiempo.
+    </p>
+  </section>
+
+  <!-- Carrusel y video -->
+  <section class="container my-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <div class="ratio ratio-16x9">
+          <div id="carouselSocotra" class="carousel slide w-100" data-bs-ride="carousel" aria-label="Galería de imágenes de Socotra">
+            <div class="carousel-inner h-100">
+              <div class="carousel-item active">
+                <img src="img/socotra.1.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Vista del mar en Socotra" loading="lazy" />
+              </div>
+              <div class="carousel-item">
+                <img src="img/socotra.2.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Laguna cristalina en la isla de Socotra" loading="lazy" />
+              </div>
+              <div class="carousel-item">
+                <img src="img/socotra.3.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Árbol sangre de dragón, flora endémica de Socotra" loading="lazy" />
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselSocotra" data-bs-slide="prev" aria-label="Imagen anterior">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselSocotra" data-bs-slide="next" aria-label="Imagen siguiente">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mt-3 mt-md-0">
+        <div class="ratio ratio-16x9">
+          <iframe 
+            src="https://www.youtube.com/embed/mACW_relB4c" 
+            title="Video documental sobre Socotra"
+            allowfullscreen
+            loading="lazy"
+            aria-label="Video documental sobre la isla de Socotra">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mapa -->
+  <section class="seccion-mapa">
+    <div class="container mt-5">
+      <h3 class="text-center">Mapa Interactivo - Isla de Socotra</h3>
+      <div id="mapaSocotra" style="height: 400px;" role="region" aria-label="Mapa interactivo de la isla de Socotra"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 footer-fijo bg-footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div class="mb-3 mb-md-0">
+        <h4 class="m-0 text-white fs-6">Diseño y desarrollo web &copy; UADE 2025</h4>
+      </div>
+      <nav>
+        <ul class="list-unstyled d-flex mb-0">
+          <li class="ms-3">
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+              <img src="img/iconos/instagram.png" alt="Logo de Instagram" width="30" />
+            </a>
+          </li>
+          <li class="ms-3">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+              <img src="img/iconos/facebook.png" alt="Logo de Facebook" width="30" />
+            </a>
+          </li>
+          <li class="ms-3">
+            <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">
+              <img src="img/iconos/ticktok.png" alt="Logo de TikTok" width="30" />
+            </a>
+          </li>
+          <li class="ms-3">
+            <a href="https://wa.me/2255410117?text=Hola%20soy%20Luciano!%20Seré%20tu%20asesor.%20¿Qué%20expedición%20querés%20contratar?" target="_blank" rel="noopener noreferrer">
+              <img src="img/iconos/whatsapp.png" alt="Logo de WhatsApp" width="30" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="javascript/eventos.js"></script>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Viví una expedición única a Papúa Occidental con Kairos. Conocé las tribus Dani y Korowai, cultura ancestral, rituales y selvas vírgenes.">
+  <meta name="keywords" content="Papúa Occidental, expediciones, Kairos, tribus, selva, Korowai, Dani, cultura ancestral, viaje exótico, turismo extremo">
+  <meta name="author" content="Kairos Expediciones">
+  <meta name="robots" content="index, follow">
+
+  <title>Expedición a Papúa Occidental | KAIROS Expediciones</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="css/stilos.css" />
+  <link rel="icon" href="img/k.png" type="image/png" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark kairos-navbar">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <span class="kairos-gold">KAIROS</span> <span class="text-light">Expediciones</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link text-light" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active text-warning" href="expediciones.html">Expediciones</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="galeria.html">Galería</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="nosotros.html">Sobre nosotros</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="tribu.html">Tribu Kairos</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="form.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero position-relative text-center" aria-label="Imagen de portada de Papúa Occidental">
+    <img src="img/papua_occidental.webp" alt="Tribu local de Papúa Occidental en la selva tropical" class="hero-img" />
+    <div class="hero-text text-white">
+      <h1 class="display-4">Papúa Occidental</h1>
+    </div>
+  </section>
+
+  <!-- Contenido -->
+  <section class="content-section text-center">
+    <h2 class="section-title">Bienvenidos a Papúa Occidental</h2>
+    <p class="description mx-auto">
+      Adéntrate en los valles remotos de Papúa Occidental, donde tribus como los Dani y los Korowai conservan formas de vida ancestrales entre selvas impenetrables y montañas sagradas. Nuestra expedición guiada te lleva a descubrir rituales, arquitectura elevada en los árboles y paisajes naturales intactos. Una experiencia profunda, cultural y transformadora, ideal para quienes buscan ir más allá del turismo tradicional y conectar con culturas únicas del planeta.
+    </p>
+  </section>
+
+  <!-- Carrusel y Video -->
+  <section class="container my-5">
+    <div class="row align-items-center">
+      <!-- Carrusel -->
+      <div class="col-md-6">
+        <div class="ratio ratio-16x9">
+          <div id="carouselPapua" class="carousel slide w-100" data-bs-ride="carousel">
+            <div class="carousel-inner h-100">
+              <div class="carousel-item active">
+                <img src="img/papua.1.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Tribu Korowai en ceremonia tradicional">
+              </div>
+              <div class="carousel-item">
+                <img src="img/papua.4.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Paisaje selvático de Papúa Occidental">
+              </div>
+              <div class="carousel-item">
+                <img src="img/papua.3.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Habitante de la tribu Dani con pintura facial">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPapua" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPapua" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video -->
+      <div class="col-md-6 mt-3 mt-md-0">
+        <div class="ratio ratio-16x9">
+          <iframe 
+            src="https://www.youtube.com/embed/xt_XsnTpQKI?si=4MO-igtmIkKgF4n1"
+            title="Video documental sobre Papúa Occidental"
+            allowfullscreen
+            loading="lazy"
+            aria-label="Documental sobre las tribus de Papúa Occidental">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mapa -->
+  <section class="seccion-mapa">
+    <div class="container mt-5">
+      <h3 class="text-center">Mapa Interactivo - Papúa Occidental</h3>
+      <div id="mapaPapua" style="height: 400px;" role="region" aria-label="Mapa de ubicación de Papúa Occidental"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 footer-fijo bg-footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div class="mb-3 mb-md-0">
+        <h4 class="m-0 text-white fs-6">Diseño y desarrollo web &copy; UADE 2025</h4>
+      </div>
+      <nav>
+        <ul class="list-unstyled d-flex mb-0">
+          <li class="ms-3"><a href="https://www.instagram.com" target="_blank" rel="noopener"><img src="img/iconos/instagram.png" alt="Logo de Instagram" width="30"></a></li>
+          <li class="ms-3"><a href="https://www.facebook.com" target="_blank" rel="noopener"><img src="img/iconos/facebook.png" alt="Logo de Facebook" width="30"></a></li>
+          <li class="ms-3"><a href="https://www.tiktok.com" target="_blank" rel="noopener"><img src="img/iconos/ticktok.png" alt="Logo de TikTok" width="30"></a></li>
+          <li class="ms-3"><a href="https://wa.me/2255410117?text=Hola%20soy%20Luciano!%20Seré%20tu%20asesor.%20¿Qué%20expedición%20querés%20contratar?" target="_blank" rel="noopener"><img src="img/iconos/whatsapp.png" alt="Logo de WhatsApp" width="30"></a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="javascript/eventos.js"></script>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</body>
+</html>

@@ -1,0 +1,433 @@
+.kairos-navbar {
+  background-color: #3b3c14;
+}
+
+.kairos-gold {
+  color: #D4AF37;
+}
+
+.fondo-crema {
+  background-color: #F2EFDF; 
+}
+
+.footer-fijo {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; 
+  padding: 0; 
+  box-sizing: border-box;
+  background-color: #3b3c14;
+  z-index: 999;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*Media Queries - Valores Kairos*/
+
+@media (min-width: 768px) {
+  .valores-kairos .valor {
+    border-right: 1px solid #6c757d;
+    border-bottom: none !important;
+    padding-right: 20px;
+  }
+
+  .valores-kairos .valor.sin-borde {
+    border-right: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .valores-kairos .valor {
+    border-bottom: 1px solid #6c757d;
+    border-right: none;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  .valores-kairos .valor.sin-borde {
+    border-bottom: none;
+  }
+}
+
+/*Colores personalizados*/
+
+.fondo-seccion {
+  background-color: #1e1e1e;
+}
+
+.tarjeta-clara {
+  background-color: #2e2e2e;
+  border-radius: 1.5rem;
+  padding: 2rem;
+}
+
+/*Sección de video*/
+
+.video-sobre-nosotros {
+  background-color: #F2EFDF;
+  padding: 60px 20px;
+}
+
+.texto-video {
+  max-width: 900px;
+  text-align: left;
+  color: #333;
+  line-height: 1.6;
+  margin: 0 auto;
+}
+
+.video-responsive {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.video-responsive iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+@media (max-width: 576px) {
+  .texto-video {
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+/*Botón dorado*/
+
+.btn-warning {
+  background-color: #D4A017;
+  border: none;
+  transition: transform 0.2s ease;
+}
+
+.btn-warning:hover {
+  transform: scale(1.05);
+}
+
+/*Cards y sombras*/
+
+.card {
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para igualar altura de imágenes en las tarjetas */
+.card-img-top {
+  object-fit: cover;
+  height: 200px;
+}
+
+/*Hero Section*/
+
+.hero {
+  position: relative;
+  height: 50vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+  filter: brightness(0.8);
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 60vh;
+  }
+
+  .hero-text h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+}
+
+/*Secciones de contenido*/
+
+.content-section {
+  background-color: #1e1e1e;
+  color: #ccc;
+  padding: 3rem 1rem;
+}
+
+.section-title {
+  color: #ffcc00;
+}
+
+.description {
+  max-width: 800px;
+}
+
+/*Carrusel de Imágenes sobre nosotros*/
+
+.carrusel-completo {
+  height: 50vh;
+  overflow: hidden;
+}
+
+.carrusel-interno {
+  height: 100%;
+}
+
+.item-carrusel {
+  height: 100%;
+}
+
+.imagen-carrusel {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+#blur-overlay {
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(30px); 
+  background-color: rgba(255, 255, 255, 0.92); 
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 1.5s ease; 
+}
+
+#logo-blur {
+  width: 300px;
+  height: auto;
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+/*tribu kairos selector de principios*/
+
+.principios-selector form {
+  background-color: transparent; 
+  color: #2e2b2b;
+}
+
+.principios-selector .form-check-label small {
+  display: block;
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+
+.principios-selector .mensaje-final {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Fondo claro para secciones */
+.fondo-claro {
+  background-color: #f5f2e7;
+  color: #000;
+}
+
+/* Títulos dorados */
+.titulo-dorado {
+  color: #D4AF37;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Acordeón y tarjetas oscuras */
+.bg-oscuro {
+  background-color: #3b3c14;
+  color: #fff;
+}
+
+/* Botones del acordeón */
+.btn-acordeon {
+  background-color: #3b3c14;
+  color: #D4AF37;
+}
+
+/* Tarjeta personalizada */
+.tarjeta-app {
+  background-color: #3b3c14;
+  color: #fff;
+  border: none;
+}
+
+/* Pie de tarjeta */
+.pie-transparente {
+  background-color: transparent;
+  border: none;
+}
+
+/* Lista transparente (usada dentro de fondo oscuro) */
+.lista-transparente .list-group-item {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  padding: 0.5rem;
+}
+
+/* seccion recomendaciones*/
+.recomendaciones-box {
+  background-color: #3b3c14; 
+  color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* seccion recomendaciones contacto*/
+.recomendaciones-box .list-group-item {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+}
+
+.fondo-suave {
+  max-width: 600px;
+  background-color: #f2ebd3;
+}
+
+/*seccion iconos sobre nosotros*/
+.bg-custom {
+  background-color: #3b3c14;
+}
+
+.box-bg {
+  background-color: #fffaf3; 
+}
+
+.icon-size {
+  width: 60px;
+  height: auto;
+  display: block;
+  margin-bottom: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding-bottom: 60px;
+}
+
+/*galeria de imagenes*/
+
+
+body {
+  background-color: #000;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.contenedor-expediciones {
+  padding: 50px 15px;
+}
+
+.tarjeta-expedicion {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  background-color: #111; 
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.tarjeta-expedicion:hover img {
+  transform: scale(1.05);
+}
+
+.tarjeta-expedicion img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  border-radius: 6px;
+}
+
+.info-expedicion {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0));
+  color: white;
+  border-radius: 0 0 6px 6px;
+}
+
+.titulo-expedicion {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.flecha-expedicion {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  margin-top: 10px;
+  transition: transform 0.2s;
+}
+
+.flecha-expedicion:hover {
+  transform: translateX(5px);
+}
+
+/* Animación de entrada */
+.animada {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+.animada.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
