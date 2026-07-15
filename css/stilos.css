@@ -223,7 +223,7 @@
   justify-content: center;
   align-items: center;
   opacity: 1;
-  transition: opacity 1.5s ease; 
+  transition: opacity 0.4s ease; 
 }
 
 #logo-blur {
@@ -231,7 +231,7 @@
   height: auto;
   opacity: 1;
   transform: scale(1);
-  transition: opacity 2s ease, transform 2s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 /*tribu kairos selector de principios*/
@@ -424,7 +424,7 @@ body {
 .animada {
   opacity: 0;
   transform: translateY(20px);
-  transition: all 0.6s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 .animada.visible {
