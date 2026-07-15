@@ -309,7 +309,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const mensaje = document.getElementById('mensajeEnviado');
 
   if (form && btn && mensaje) {
-    emailjs.init('JSDF7Btaw_CmPhHsJ'); 
+    emailjs.init('YOUR_EMAILJS_PUBLIC_KEY'); 
 
     form.addEventListener('submit', function(event) {
       event.preventDefault();
