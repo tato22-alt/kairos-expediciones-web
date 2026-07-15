@@ -158,7 +158,7 @@ window.addEventListener("load", function () {
     setTimeout(() => {
       logo.style.opacity = "0";
       logo.style.transform = "scale(1.4)";
-    }, 3000); 
+    }, 400); 
 
     setTimeout(() => {
       overlay.style.opacity = "0";
