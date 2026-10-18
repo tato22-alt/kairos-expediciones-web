@@ -56,12 +56,13 @@ El formulario de contacto usa EmailJS. El repositorio no incluye credenciales; p
 
 Los enlaces de redes sociales y WhatsApp del pie de página son genéricos y no apuntan a cuentas ni teléfonos reales.
 
-## Mejoras pendientes
+## Mejoras recientes
 
-- Unificar las versiones de Bootstrap cargadas en las distintas páginas.
-- Revisar accesibilidad (textos alternativos, contraste y navegación por teclado).
-- Optimizar el peso de las imágenes.
-- Reorganizar los estilos para reducir duplicación.
+- **Responsive:** el pie de página deja de ser fijo en celulares para no tapar contenido; mapas, galería y portadas ajustan su alto según la pantalla; se corrigió el `viewport` de la página de inicio.
+- **Accesibilidad:** etiquetas del formulario legibles, botón del menú y controles de los carruseles con texto para lectores de pantalla, tarjetas de la galería navegables con teclado, foco visible y soporte para `prefers-reduced-motion`.
+- **Performance:** se eliminaron imágenes sin uso y se redimensionaron las fotos y los íconos animados (de ~50 MB a ~12 MB en total).
+- **Código:** una sola versión de Bootstrap y Leaflet en todo el sitio, colores centralizados en variables CSS, estilos en línea movidos a la hoja de estilos y los mapas generados desde una única configuración en JavaScript.
+- **Funcionalidad:** el recomendador de "Tribu Kairos" ahora vincula los principios elegidos con una expedición y enlaza a su página; el formulario valida los campos antes de enviar; la animación de entrada dura menos de 2 segundos.
 
 ## Autor
 
