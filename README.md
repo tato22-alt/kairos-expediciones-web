@@ -1,45 +1,68 @@
 # Kairos Expediciones
 
-Sitio web ficticio de expediciones desarrollado como proyecto académico de Diseño y Desarrollo Web.
+Sitio web estático para **Kairos Expediciones**, una agencia de viajes de aventura ficticia. Fue desarrollado como proyecto académico de la materia Diseño y Desarrollo Web (UADE, 2025) y hoy forma parte de mi portfolio.
 
-El objetivo del proyecto fue practicar estructura HTML, estilos CSS, navegación entre secciones, diseño visual, formularios y presentación de una propuesta digital para una marca ficticia.
+**Demo:** https://tato22-alt.github.io/kairos-expediciones-web/
 
-## Tecnologías utilizadas
+## Descripción
 
-- HTML
-- CSS
+El sitio presenta la marca, su catálogo de expediciones (Atenas, Auroras boreales, Machu Picchu, Malvinas, Isla de Pascua, Papúa, Siberia, Socotra y Tíbet), una galería de imágenes y un formulario de contacto. El foco del proyecto estuvo en la estructura semántica, la maquetación responsive y la navegación entre páginas.
+
+## Funcionalidades
+
+- Página de inicio con carrusel de destinos.
+- Catálogo de expediciones con una página de detalle por destino.
+- Secciones institucionales ("Nosotros" y "Tribu").
+- Galería con animaciones de aparición al hacer scroll.
+- Formulario de contacto con validación y envío a través de EmailJS.
+- Diseño responsive basado en Bootstrap.
+
+## Tecnologías
+
+- HTML5
+- CSS3
 - JavaScript
-- Bootstrap
-- EmailJS
+- [Bootstrap 5](https://getbootstrap.com/)
+- [EmailJS](https://www.emailjs.com/)
 
-## Estado del proyecto
+## Estructura
 
-Proyecto académico finalizado / portfolio.
+```
+├── index.html           # Inicio
+├── expediciones.html    # Catálogo de expediciones
+├── <destino>.html       # Páginas de detalle (atenas, tibet, socotra, ...)
+├── galeria.html         # Galería de imágenes
+├── nosotros.html        # Sobre la marca
+├── tribu.html           # Comunidad
+├── form.html            # Formulario de contacto
+├── css/stilos.css       # Estilos propios
+├── javascript/eventos.js
+└── img/                 # Imágenes e íconos
+```
 
-El sitio se encuentra publicado como ejemplo de práctica en desarrollo web estático. No representa una empresa real ni utiliza datos personales reales.
+## Ejecución local
 
-## Seguridad y privacidad
+No requiere instalación ni build. Basta con abrir `index.html` en el navegador o servir la carpeta con cualquier servidor estático (por ejemplo, la extensión Live Server de VS Code).
 
-- Los datos de contacto son ficticios o placeholders.
-- No se incluyen teléfonos personales reales.
-- No se incluyen claves reales de EmailJS.
-- La integración con EmailJS requiere configuración externa mediante placeholders.
+## Configuración del formulario
 
-## Funcionalidades principales
+El formulario de contacto usa EmailJS. El repositorio no incluye credenciales; para que el envío funcione, reemplazá los placeholders en `javascript/eventos.js` con los datos de tu cuenta:
 
-- Página principal de presentación.
-- Secciones de expediciones.
-- Galería visual.
-- Formulario de contacto.
-- Navegación entre páginas.
-- Diseño responsive básico.
+| Placeholder                | Dónde se obtiene en EmailJS     |
+| -------------------------- | ------------------------------- |
+| `YOUR_EMAILJS_PUBLIC_KEY`  | Account → General → Public Key  |
+| `YOUR_EMAILJS_TEMPLATE_ID` | Email Templates                 |
+| `default_service`          | Email Services (Service ID)     |
 
-## Publicación
+Los enlaces de redes sociales y WhatsApp del pie de página son genéricos y no apuntan a cuentas ni teléfonos reales.
 
-Sitio preparado para GitHub Pages:
+## Mejoras pendientes
 
-https://tato22-alt.github.io/kairos-expediciones-web/
+- Unificar las versiones de Bootstrap cargadas en las distintas páginas.
+- Revisar accesibilidad (textos alternativos, contraste y navegación por teclado).
+- Optimizar el peso de las imágenes.
+- Reorganizar los estilos para reducir duplicación.
 
-## Nota
+## Autor
 
-Este proyecto fue realizado con fines académicos y de portfolio. Puede requerir mejoras futuras de accesibilidad, performance y refactorización de estilos.
+Luciano Domínguez — proyecto académico, UADE.
