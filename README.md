@@ -10,7 +10,7 @@ El sitio presenta la marca, su catálogo de expediciones (Atenas, Auroras boreal
 
 ## Funcionalidades
 
-- Página de inicio con carrusel de destinos.
+- Página de inicio con la presentación de la marca.
 - Catálogo de expediciones con una página de detalle por destino.
 - Secciones institucionales ("Nosotros" y "Tribu").
 - Galería con animaciones de aparición al hacer scroll.
